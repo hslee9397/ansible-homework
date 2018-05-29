@@ -3,7 +3,7 @@ Host *
   ServerAliveInterval 60
 
 Host os-bastion
-  HostName workstation-f62c.rhpds.opentlc.com
+  HostName workstation-{{ osp_guid }}.rhpds.opentlc.com
   User cloud-user
   IdentityFile /var/lib/awx/.ssh/openstack.pem
   IdentitiesOnly yes

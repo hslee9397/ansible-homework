@@ -1,1 +1,3 @@
 tag:owner=kmendez@redhat.com
+tag:AnsibleGroup=towers
+tag_AnsibleGroup_towers
