@@ -3,4 +3,4 @@
   become: yes
   tasks:
     - debug:
-      msg: "TODO: Bastion is {{ ansible_hostname }}"
+        msg: "TODO: Bastion is {{ ansible_hostname }}"
