@@ -1,5 +1,5 @@
 # Place openstack pem file on tower machine
-- hosts: tag_AnsibleGroup_towers 
+- hosts: tower
   become: false
   gather_facts: false
   tasks:
