@@ -4,7 +4,7 @@
 #   Remove the base 3 tier app packages (haproxy, tomcat etc)
 
 - name: cleaner - delete the the tier app specfic additions
-  hosts: appdbs,apps,frontends
+  hosts: 3tierapp
   roles:
     - cleaner
 
