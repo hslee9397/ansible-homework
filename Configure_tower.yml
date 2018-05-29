@@ -1,0 +1,11 @@
+# Place openstack pem file on tower machine
+- hosts: localhost
+  become: false
+  gather_facts: false
+  tasks:
+    - name: Fetch the openstack pem file
+      get_url:
+        url: "{{ openstack_pem_download }}"
+        dest: /var/lib/awx/.ssh
+        mode: 0400
+      ignore_errors: true

@@ -1,4 +1,4 @@
-# Place openstack pem file on tower machine
+- import_playbook: Configure_tower.yml
 - hosts: jumpbox
   gather_facts: true
   roles:
