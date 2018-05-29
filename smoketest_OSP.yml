@@ -1,3 +1,4 @@
+- import_playbook: Configure_tower.yml
 - hosts: jumpbox
   gather_facts: true
   roles:

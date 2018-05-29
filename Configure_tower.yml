@@ -1,5 +1,6 @@
 # Place openstack pem file on tower machine
-- hosts: tower 
+#- hosts: tower 
+- hosts: localhost
   become: false
   gather_facts: false
   tasks:
