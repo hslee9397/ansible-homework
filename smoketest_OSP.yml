@@ -1,0 +1,16 @@
+# Place openstack pem file on tower machine
+- hosts: jumpbox
+  gather_facts: true
+  roles:
+  - name: osp-facts
+# Smoke test the loadbalancer 
+- name: smoke test load-balancer tier
+  hosts: frontends
+  become: yes
+  tasks:
+    - name: Test load balancer uri
+      uri:
+        url: "http://{{ ansible_host }}"
+        method: GET
+        status_code: 200
+        return_content: no

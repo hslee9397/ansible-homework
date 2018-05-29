@@ -1,0 +1,2 @@
+[jumpbox]
+osp-workstation ansible_host="workstation-{{ osp_guid }}.rhpds.opentlc.com" ansible_ssh_user=cloud-user 
