@@ -1,0 +1,6 @@
+- name: Provision AWS instances
+  hosts: aws_bastion
+  become: yes
+  tasks:
+    - debug:
+      msg: "TODO: Bastion is {{ ansible_hostname }}"
